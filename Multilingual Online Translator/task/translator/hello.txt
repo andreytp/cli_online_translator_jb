@@ -86,3 +86,11 @@ Russian Examples:
 Tell her slipping' Jimmy says hello. :
 Передай ей, что Скользкий Джимми передает ей привет.
 
+
+Turkish Translations:
+selam
+
+Turkish Examples:
+Say "hello" from Tito Spadola. :
+Tito Spadola'dan, "selam" söyleyeceğim.
+

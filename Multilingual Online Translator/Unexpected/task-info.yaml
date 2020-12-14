@@ -172,6 +172,106 @@ files:
     if __name__ == '__main__':
         TranslatorTest('translator.translator').run_tests()
   learner_created: false
+- name: translator/hello.txt
+  visible: true
+  text: |2+
+
+    Arabic Translations:
+    مرحبا
+
+    Arabic Examples:
+    Well, hello, old-school racist. :
+    حسنا، مرحبا يا تلميذة المدرسة العنصريّة - الأمر يسري بدمهم!
+
+
+    German Translations:
+    hallo
+
+    German Examples:
+    Finally got a personalized hello from Earl. :
+    Ich habe endlich ein personifiziertes hallo von Earl bekommen.
+
+
+    Spanish Translations:
+    hola
+
+    Spanish Examples:
+    Well, hello, Miss Anchor-liar. :
+    Bien, hola, señorita presentadora de mentiras.
+
+
+    French Translations:
+    bonjour
+
+    French Examples:
+    Say goodbye to anti-aliasing and hello to naturally crisp graphics. :
+    Dites adieu à l'anti-crénelage et bonjour à des graphismes naturellement nets.
+
+
+    Hebrew Translations:
+    שלום
+
+    Hebrew Examples:
+    How come they never say hello? :
+    איך זה שהן אף פעם לא אומרות שלום.
+
+
+    Japanese Translations:
+    こんにちは
+
+    Japanese Examples:
+    The little boy said hello to me. :
+    小さな男の子が私にこんにちはと言った。
+
+
+    Dutch Translations:
+    dag
+
+    Dutch Examples:
+    Which in Hawaiian means hello and goodbye. :
+    Dat betekent hallo en tot ziens in het Hawaiiaans.
+
+
+    Polish Translations:
+    cześć
+
+    Polish Examples:
+    You had me at "hello". :
+    Wystarczyło mi twoje "cześć".
+
+
+    Portuguese Translations:
+    olá
+
+    Portuguese Examples:
+    That was my last kiss hello. :
+    Pois eu garanto que aquele foi o meu último beijo de olá.
+
+
+    Romanian Translations:
+    salut
+
+    Romanian Examples:
+    I came by to say hello. :
+    Am avut o pauză de masă și am trecut să te salut.
+
+
+    Russian Translations:
+    привет
+
+    Russian Examples:
+    Tell her slipping' Jimmy says hello. :
+    Передай ей, что Скользкий Джимми передает ей привет.
+
+
+    Turkish Translations:
+    selam
+
+    Turkish Examples:
+    Say "hello" from Tito Spadola. :
+    Tito Spadola'dan, "selam" söyleyeceğim.
+
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/99/stages/549/implement#comment
 status: Unchecked
 record: -1

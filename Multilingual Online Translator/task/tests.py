@@ -10,13 +10,11 @@ import os
 
 if sys.platform.startswith("win"):
     import _locale
-
     # pylint: disable=protected-access
     _locale._getdefaultlocale = (lambda *args: ['en_US', 'utf8'])
 
 CheckResult.correct = lambda: CheckResult(True, '')
 CheckResult.wrong = lambda feedback: CheckResult(False, feedback)
-
 
 languages = ["arabic", "german", "english", "spanish", "french",
              "hebrew", "japanese", "dutch", "polish", "portuguese",
@@ -26,9 +24,23 @@ languages = ["arabic", "german", "english", "spanish", "french",
 class TranslatorTest(StageTest):
     def generate(self):
         return [
-            TestCase(args=['english', 'all', 'love'], attach='english\nall\nlove'),
-            TestCase(args=['spanish', 'english', 'derechos'], attach='spanish\nenglish\nderechos')
+            TestCase(args=['english', 'all', 'brrrrrrrrrrrrrrrrk'], check_function=self.check1),
+            TestCase(args=['english', 'korean', 'hello'], check_function=self.check2),
+            TestCase(args=['french', 'all', 'chute'], check_function=self.check3, attach='french\nall\nchute')
         ]
+
+    def check1(self, reply, attach):
+        reply = reply.lower()
+        if 'unable' not in reply:
+            return CheckResult.wrong('Your program does not output an error message for an nonexistent word.')
+        return CheckResult.correct()
+
+    def check2(self, reply, attach):
+        if 'support korean' in reply.lower():
+            return CheckResult.correct()
+
+        return CheckResult.wrong(
+            'Your program does not output an error message about an unsupported language.')
 
     def check_output(self, output, true_results):
         output = output.lower()
@@ -85,7 +97,7 @@ class TranslatorTest(StageTest):
 
         return True, ''
 
-    def check(self, reply, attach):
+    def check3(self, reply, attach):
         l1, l2, word = attach.split("\n")
         result_dict = get_results(l1, l2, word)
 
