@@ -272,6 +272,24 @@ files:
     Tito Spadola'dan, "selam" söyleyeceğim.
 
   learner_created: true
+- name: brrrrrrrrrrrrrrrrk.txt
+  visible: true
+  learner_created: true
+- name: translator/ggtrfr.txt
+  visible: true
+  learner_created: true
+- name: translator/прівет.txt
+  visible: true
+  learner_created: true
+- name: chute.txt
+  visible: true
+  learner_created: true
+- name: translator/__init__.py
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/99/stages/549/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 14 Dec 2020 15:56:00 UTC
 record: -1
